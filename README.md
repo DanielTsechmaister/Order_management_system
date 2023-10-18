@@ -147,7 +147,7 @@ This menu-driven approach allows for easy interaction with the SuperStore progra
 
 
 
-###The second part of the project consists of two different files that are used by the customers
+## The second part of the project consists of two different files that are used by the customers
 
 1. **Super Store App (super_store_app.py):**
 
