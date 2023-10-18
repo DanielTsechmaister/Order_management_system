@@ -114,17 +114,13 @@ It allows users to interact with the program by providing a menu-driven interfac
 The program provides the following menu options:
 Of course, here is a more detailed breakdown of the main functions in the `main.py` file with the function name first:
 
-      - `Print all products`: This option prints a list of all products currently available in the store.
+- `Print all products`: This option prints a list of all products currently available in the store.
       - `Print all clients`: It displays a list of all the store's customers.
-      - `Add new product to the store`: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price.          
-          Dependingon the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera    
-          resolution may be required.
-      - `Add new client to the store`: This option allows users to add a new client to the store by providing details such as client ID, name, email, address, 
-         phone number, and gender.
+      - `Add new product to the store`: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price.          Dependingon the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera resolution may be required.
+      - `Add new client to the store`: This option allows users to add a new client to the store by providing details such as client ID, name, email, address, phone number, and gender.
       - `Remove product`: Users can remove a product from the store by entering the product's ID.
       - `Remove client`: This option allows users to remove a client from the store by providing the client's ID.
-      - `Print all products under price`: Users can view a list of products in the store that are priced below a certain amount. The program prompts the user to 
-         enter a maximum price, and it displays the matching products.
+      - `Print all products under price`: Users can view a list of products in the store that are priced below a certain amount. The program prompts the user to enter a maximum price, and it displays the matching products.
       - `Print the most expensive product`: This option displays information about the most expensive product available in the store.
       - `Print smartphone list`: Users can view a list of all smartphone products in the store.
       - `Print laptop list`: This option displays a list of all laptop products available in the store.
@@ -133,40 +129,11 @@ Of course, here is a more detailed breakdown of the main functions in the `main.
       - `Print common camera resolution`: This option identifies and prints the most common camera resolution among smartphone products in stock.
       - `Print popular products`: Users can view a list of popular products based on predefined criteria.
       - `Print all shirts`: It displays a list of all shirt products in the store.
-      - `Create a new order`: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and          handles them accordingly.
+      - `Create a new order`: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and handles them accordingly.
       - `Print all orders`: This option prints a list of all orders placed in the store.
       
       - `Exit`: Choosing this option exits the program.
 
-   Here's a breakdown of the functions in the MAIN file:
-      
-      `display_menu()`: Displays the menu of options for the user to choose from.
-      `is_valid_input(i)`: Checks if the user's input is a valid option in the menu.
-      `print_all_products(store)`: Calls the `print_products()` method of the `SuperStore` object to print a list of all products in the store.
-      `print_all_clients(store)`: Calls the `print_clients()` method of the `SuperStore` object to print a list of all clients in the store.
-      `add_new_product(store)`: Collects information from the user to create a new product (either a laptop or smartphone) and adds it to the store by calling 
-         the `add_product()` or `__iadd__()` method of the `SuperStore` object.
-      `add_new_client(store)`: Collects information from the user to create a new client and adds it to the store by calling the `add_client()` method of the `SuperStore`             object.
-      `remove_product(store)`: Collects the product ID from the user and attempts to remove the product from the store by calling the `remove_product()` method of the  
-          `SuperStore` object.
-      `remove_client(store)`: Collects the client ID from the user and attempts to remove the client from the store by calling the `remove_client()` method of the    
-          `SuperStore` object.
-      `print_all_products_above_price(store)`: Collects a maximum price from the user and calls the `get_all_by_price_under()` method of the `SuperStore` object to print a 
-          list of products under the specified price.
-      `print_most_expensive_product(store)`: Calls the `get_most_expensive_product()` method of the `SuperStore` object to print the most expensive product in the store.
-      `get_all_phones(store)`: Calls the `get_all_phones()` method of the `SuperStore` object to print a list of all smartphone products.
-      `get_all_laptop(store)`: Calls the `get_all_laptop()` method of the `SuperStore` object to print a list of all laptop products.
-      `phone_average_price(store)`: Calls the `phone_average_price()` method of the `SuperStore` object to calculate and print the average price of smartphones in the 
-         store.
-      `get_max_screen(store)`: Calls the `get_max_screen()` method of the `SuperStore` object to print the largest screen size among laptops.
-      `get_common_cam(store)`: Calls the `get_common_cam()` method of the `SuperStore` object to print the most common camera resolution among smartphones.
-      `list_popular(store)`: Calls the `list_popular()` method of the `SuperStore` object to print a list of popular products.
-      `list_shirts(store)`: Calls the `list_shirts()` method of the `SuperStore` object to print a list of all shirts in the store.
-      `Create_order(store)`: Collects client ID, product ID, and quantity from the user and calls the `add_order()` method of the `SuperStore` object to create a new order          in the store.
-      `list_order(store)`: Calls the `list_order()` method of the `SuperStore` object to print all orders.
-      
-      `get_valid_user_choice()`: Gets the user's choice, validates it, and returns the choice as an integer.
-      `main()`: The main function that initializes the `SuperStore` object, displays the menu, processes user input, and calls the corresponding functions based on the user's choice.
       
       
 
