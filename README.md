@@ -138,6 +138,39 @@ Of course, here is a more detailed breakdown of the main functions in the `main.
       
       - `Exit`: Choosing this option exits the program.
 
+   Here's a breakdown of the functions in the MAIN file:
+      
+      `display_menu()`: Displays the menu of options for the user to choose from.
+      `is_valid_input(i)`: Checks if the user's input is a valid option in the menu.
+      `print_all_products(store)`: Calls the `print_products()` method of the `SuperStore` object to print a list of all products in the store.
+      `print_all_clients(store)`: Calls the `print_clients()` method of the `SuperStore` object to print a list of all clients in the store.
+      `add_new_product(store)`: Collects information from the user to create a new product (either a laptop or smartphone) and adds it to the store by calling 
+         the `add_product()` or `__iadd__()` method of the `SuperStore` object.
+      `add_new_client(store)`: Collects information from the user to create a new client and adds it to the store by calling the `add_client()` method of the `SuperStore`             object.
+      `remove_product(store)`: Collects the product ID from the user and attempts to remove the product from the store by calling the `remove_product()` method of the  
+          `SuperStore` object.
+      `remove_client(store)`: Collects the client ID from the user and attempts to remove the client from the store by calling the `remove_client()` method of the    
+          `SuperStore` object.
+      `print_all_products_above_price(store)`: Collects a maximum price from the user and calls the `get_all_by_price_under()` method of the `SuperStore` object to print a 
+          list of products under the specified price.
+      `print_most_expensive_product(store)`: Calls the `get_most_expensive_product()` method of the `SuperStore` object to print the most expensive product in the store.
+      `get_all_phones(store)`: Calls the `get_all_phones()` method of the `SuperStore` object to print a list of all smartphone products.
+      `get_all_laptop(store)`: Calls the `get_all_laptop()` method of the `SuperStore` object to print a list of all laptop products.
+      `phone_average_price(store)`: Calls the `phone_average_price()` method of the `SuperStore` object to calculate and print the average price of smartphones in the 
+         store.
+      `get_max_screen(store)`: Calls the `get_max_screen()` method of the `SuperStore` object to print the largest screen size among laptops.
+      `get_common_cam(store)`: Calls the `get_common_cam()` method of the `SuperStore` object to print the most common camera resolution among smartphones.
+      `list_popular(store)`: Calls the `list_popular()` method of the `SuperStore` object to print a list of popular products.
+      `list_shirts(store)`: Calls the `list_shirts()` method of the `SuperStore` object to print a list of all shirts in the store.
+      `Create_order(store)`: Collects client ID, product ID, and quantity from the user and calls the `add_order()` method of the `SuperStore` object to create a new order          in the store.
+      `list_order(store)`: Calls the `list_order()` method of the `SuperStore` object to print all orders.
+      
+      `get_valid_user_choice()`: Gets the user's choice, validates it, and returns the choice as an integer.
+      `main()`: The main function that initializes the `SuperStore` object, displays the menu, processes user input, and calls the corresponding functions based on the user's choice.
+      
+      
+
+This script provides an interactive interface for managing a store's products and clients through the `SuperStore` class and its associated methods.
 
 *Input Validation*
 The main part of the program includes input validation to ensure that users provide valid options within the specified range. If users enter invalid input, the program provides an error message and prompts them to enter a valid choice.
