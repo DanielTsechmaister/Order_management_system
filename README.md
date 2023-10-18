@@ -105,55 +105,45 @@ Laptop
      - `get_shirt(product_id)`: Returns a shirt product by product ID.
      - `get_max_order_id()`: Returns the maximum order ID.
      - `add_order(client_id, product_id, quantity)`: Creates a new order in the store.
-Main Part Overview
-The main.py file is the entry point for your SuperStore program. It allows users to interact with the program by providing a menu-driven interface. Users can perform various operations related to managing the store's products and customers.
 
-Menu Options
+**Main Part Overview**
+The main.py file is the entry point for your SuperStore program.
+It allows users to interact with the program by providing a menu-driven interface. Users can perform various operations related to managing the store's products and customers.
+
+*Menu Options*
 The program provides the following menu options:
+Of course, here is a more detailed breakdown of the main functions in the `main.py` file with the function name first:
 
-Print all products: This option prints a list of all products currently available in the store.
+      - `Print all products`: This option prints a list of all products currently available in the store.
+      - `Print all clients`: It displays a list of all the store's customers.
+      - `Add new product to the store`: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price.          
+          Dependingon the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera    
+          resolution may be required.
+      - `Add new client to the store`: This option allows users to add a new client to the store by providing details such as client ID, name, email, address, 
+         phone number, and gender.
+      - `Remove product`: Users can remove a product from the store by entering the product's ID.
+      - `Remove client`: This option allows users to remove a client from the store by providing the client's ID.
+      - `Print all products under price`: Users can view a list of products in the store that are priced below a certain amount. The program prompts the user to 
+         enter a maximum price, and it displays the matching products.
+      - `Print the most expensive product`: This option displays information about the most expensive product available in the store.
+      - `Print smartphone list`: Users can view a list of all smartphone products in the store.
+      - `Print laptop list`: This option displays a list of all laptop products available in the store.
+      - `Print average phone price`: It calculates and prints the average price of all smartphone products.
+      - `Print largest laptop screen`: Users can see the largest screen size among laptop products.
+      - `Print common camera resolution`: This option identifies and prints the most common camera resolution among smartphone products in stock.
+      - `Print popular products`: Users can view a list of popular products based on predefined criteria.
+      - `Print all shirts`: It displays a list of all shirt products in the store.
+      - `Create a new order`: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and          handles them accordingly.
+      - `Print all orders`: This option prints a list of all orders placed in the store.
+      
+      - `Exit`: Choosing this option exits the program.
 
-Print all clients: It displays a list of all the store's customers.
 
-Add new product to the store: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price. Depending on the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera resolution may be required.
-
-Add new client to the store: This option allows users to add a new client to the store by providing details such as client ID, name, email, address, phone number, and gender.
-
-Remove product: Users can remove a product from the store by entering the product's ID.
-
-Remove client: This option allows users to remove a client from the store by providing the client's ID.
-
-Print all products under price: Users can view a list of products in the store that are priced below a certain amount. The program prompts the user to enter a maximum price, and it displays the matching products.
-
-Print the most expensive product: This option displays information about the most expensive product available in the store.
-
-Print smartphone list: Users can view a list of all smartphone products in the store.
-
-Print laptop list: This option displays a list of all laptop products available in the store.
-
-Print average phone price: It calculates and prints the average price of all smartphone products.
-
-Print largest laptop screen: Users can see the largest screen size among laptop products.
-
-Print common camera resolution: This option identifies and prints the most common camera resolution among smartphone products in stock.
-
-Print popular products: Users can view a list of popular products based on predefined criteria.
-
-Print all shirts: It displays a list of all shirt products in the store.
-
-Create a new order: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and handles them accordingly.
-
-Print all orders: This option prints a list of all orders placed in the store.
-
-Exit: Choosing this option exits the program.
-
-Input Validation
+*Input Validation*
 The main part of the program includes input validation to ensure that users provide valid options within the specified range. If users enter invalid input, the program provides an error message and prompts them to enter a valid choice.
-
 The program runs in a loop, continuously displaying the menu and processing user input until the user chooses to exit.
 
-Exception Handling
+###Exception Handling
 The program includes error handling for potential exceptions, such as client or product not found, and provides meaningful error messages to guide the user and ensure the program continues to run smoothly.
 
 This menu-driven approach allows for easy interaction with the SuperStore program, enabling users to perform various tasks related to product and customer management.
-
