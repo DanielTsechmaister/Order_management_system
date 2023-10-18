@@ -123,16 +123,15 @@ Of course, here is a more detailed breakdown of the main functions in the `main.
 - `Print all products under price`: Users can view a list of products in the store that are priced below a certain amount. The program prompts the user to enter a maximum price, and it displays the matching products.
 - `Print the most expensive product`: This option displays information about the most expensive product available in the store.
 - `Print smartphone list`: Users can view a list of all smartphone products in the store.
-      - `Print laptop list`: This option displays a list of all laptop products available in the store.
-      - `Print average phone price`: It calculates and prints the average price of all smartphone products.
-      - `Print largest laptop screen`: Users can see the largest screen size among laptop products.
-      - `Print common camera resolution`: This option identifies and prints the most common camera resolution among smartphone products in stock.
-      - `Print popular products`: Users can view a list of popular products based on predefined criteria.
-      - `Print all shirts`: It displays a list of all shirt products in the store.
-      - `Create a new order`: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and handles them accordingly.
-      - `Print all orders`: This option prints a list of all orders placed in the store.
-      
-      - `Exit`: Choosing this option exits the program.
+- `Print laptop list`: This option displays a list of all laptop products available in the store.
+- `Print average phone price`: It calculates and prints the average price of all smartphone products.
+- `Print largest laptop screen`: Users can see the largest screen size among laptop products.
+- `Print common camera resolution`: This option identifies and prints the most common camera resolution among smartphone products in stock.
+- `Print popular products`: Users can view a list of popular products based on predefined criteria.
+- `Print all shirts`: It displays a list of all shirt products in the store.
+- `Create a new order`: Users can create a new order by providing details, including the client's ID, product ID, and quantity. The program checks for exceptions and handles them accordingly.
+- `Print all orders`: This option prints a list of all orders placed in the store.
+- `Exit`: Choosing this option exits the program.
 
   
 This script provides an interactive interface for managing a store's products and clients through the `SuperStore` class and its associated methods.
