@@ -144,3 +144,32 @@ The program runs in a loop, continuously displaying the menu and processing user
 The program includes error handling for potential exceptions, such as client or product not found, and provides meaningful error messages to guide the user and ensure the program continues to run smoothly.
 
 This menu-driven approach allows for easy interaction with the SuperStore program, enabling users to perform various tasks related to product and customer management.
+
+**The second part of the project consists of two different files that are used by the customers**
+
+1. **Super Store App (super_store_app.py):**
+
+    - **Description:** The `super_store_app.py` file is a crucial part of the SuperStore project. It serves as the runtime file for the program, providing a graphical user interface for users to interact with the store's products and clients. This interface offers a user-friendly way to manage and display data from SuperStore.
+
+    - **Features:**
+      - *Display of Products:* Users can select a product type (All products, Laptops, Smartphones, or Shirts) from a dropdown list, and the app displays the selected products in a list.
+      - *Creating a New Product:* The app allows users to create new products, specifically smartphones and laptops. It validates user input and provides feedback on the success or failure of the creation process.
+   
+    - *Usage:* The Super Store App simplifies the process of managing the store's products and clients. It enables users to view product lists and create new products efficiently.
+
+
+
+2. **Shirt Orders Analysis (shirt_orders_analysis.py):**
+
+    - **Description:** The `shirt_orders_analysis.py` module is a critical component of the SuperStore project that focuses on analyzing data related to shirt orders. It utilizes NumPy arrays and functions, as well as Matplotlib, to investigate and visualize data from various files. This module helps extract valuable insights from the store's order data.
+
+    - **Features:**
+      - **Data Loading and Analysis:** The module loads data from CSV files, such as orders.csv, shirts.csv, clients.csv, and products_supply.csv, into NumPy arrays. It performs data analysis based on specific requirements.
+      - **Payment Calculation:** The module calculates payments for orders by multiplying the quantity of the order by the price of the product (shirt).
+      - **Identifying the Most Expensive Order:** It identifies and prints the order number, customer name, product name, and payment for the most expensive order.
+      - *Client Information Retrieval:* Users can input a customer's ID, and the module prints the customer's name, the number of orders they've made, and the total amount they've paid.
+      - *Data Filtering:* The module can filter and print orders with payments above the average payment.
+      - *Customer Order Analysis:* It builds a dictionary that contains the number of orders for each customer.
+      - *Visualization:* The module creates a bar graph showing the number of orders per customer.
+
+    - *Usage:* The Shirt Orders Analysis module empowers users to gain insights from the store's order data. It provides valuable information about payments, customer behavior, and order trends.
