@@ -114,6 +114,15 @@ It allows users to interact with the program by providing a menu-driven interfac
 The program provides the following menu options:
 Of course, here is a more detailed breakdown of the main functions in the `main.py` file with the function name first:
 
+   
+   •	`Print all products`: This option prints a list of all products currently available in the store.
+   •	`Print all clients`: It displays a list of all the store's customers.
+   •	`Add new product to the store`: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price.          Dependingon the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera resolution may be required.
+
+
+
+
+
 - `Print all products`: This option prints a list of all products currently available in the store.
 - `Print all clients`: It displays a list of all the store's customers.
 - `Add new product to the store`: Users can add a new product to the store by providing relevant details like product type, brand, model, year, and price.          Dependingon the product type (laptop or smartphone), additional attributes such as CPU, hard disk, screen size, cell network, number of cores, and camera resolution may be required.
