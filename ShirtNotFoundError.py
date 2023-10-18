@@ -1,0 +1,4 @@
+class ShirtNotFoundError(Exception):
+    pass
+
+
