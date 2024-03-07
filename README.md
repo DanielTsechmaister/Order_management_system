@@ -1,4 +1,4 @@
-#Order management system - SuperStore Project README
+# Order management system - SuperStore Project README
 
 ## Project Overview
 The SuperStore project is a Python program that helps manage a supermarket selling a variety of products. The project consists of multiple files, each with its own class and functionality to handle different aspects of the store's operations. This README will provide an overview of each file and its associated classes and functions.
